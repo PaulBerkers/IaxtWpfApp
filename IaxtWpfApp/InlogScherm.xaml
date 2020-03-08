@@ -1,0 +1,19 @@
+﻿<Window x:Class="IaxtWpfApp.InlogScherm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IaxtWpfApp"
+        mc:Ignorable="d"
+        Title="InlogScherm" Height="250" Width="300" FontSize="20" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock FontWeight="Bold">Naam:</TextBlock>
+            <TextBox x:Name="tbName" Text="Admin" Margin="0,0,0,10"></TextBox>
+            <TextBlock FontWeight="Bold">Password:</TextBlock>
+            <PasswordBox x:Name="pbPassword" Password="Admin1234" Margin="0,0,0,10"></PasswordBox>
+
+            <Button Style="{DynamicResource RoundButtonTemplate}" x:Name="btnInloggen" Click="btnInloggen_Click"  Background="#5c46cc" Foreground="White" Height="35">Inloggen</Button>
+        </StackPanel>
+    </Grid>
+</Window>
